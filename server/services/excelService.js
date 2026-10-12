@@ -110,12 +110,12 @@ function getRowValue(row, headerMap, aliases) {
   return '';
 }
 
-export function parseInventoryFile() {
-  if (!fs.existsSync(INVENTORY_FILE_PATH)) {
-    throw new Error(`Inventory file not found at ${INVENTORY_FILE_PATH}`);
+export function parseInventoryFile(filePath = INVENTORY_FILE_PATH) {
+  if (!fs.existsSync(filePath)) {
+    throw new Error(`Inventory file not found at ${filePath}`);
   }
 
-  const workbook = xlsx.readFile(INVENTORY_FILE_PATH);
+  const workbook = xlsx.readFile(filePath);
 
   const allProducts = [];
   let idCounter = 1;
