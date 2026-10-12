@@ -2,31 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg: #f5f5f7;
+  --bg-elevated: rgba(255, 255, 255, 0.8);
+  --card: rgba(255, 255, 255, 0.9);
+  --card-strong: #ffffff;
+  --muted: #f2f2f4;
+  --surface: #f8f8f7;
+  --text: #1d1d1f;
+  --text-soft: #52525b;
+  --text-faint: #71717a;
+  --border: rgba(24, 24, 27, 0.08);
+  --brand: #3b7a57;
+  --brand-strong: #214f3a;
+  --brand-soft: #e8f3ec;
+  --shadow-soft: 0 16px 40px -24px rgba(15, 23, 42, 0.24);
+}
+
+.dark {
+  --bg: #0c1115;
+  --bg-elevated: rgba(17, 24, 39, 0.75);
+  --card: rgba(15, 23, 42, 0.88);
+  --card-strong: #111827;
+  --muted: #101827;
+  --surface: #111827;
+  --text: #f5f5f7;
+  --text-soft: #d4d4d8;
+  --text-faint: #a1a1aa;
+  --border: rgba(255, 255, 255, 0.08);
+  --brand: #7dd3a3;
+  --brand-strong: #a7f3d0;
+  --brand-soft: rgba(125, 211, 163, 0.12);
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background: var(--bg);
   }
 
   body {
-    @apply bg-white text-slate-800 dark:bg-slate-950 dark:text-slate-100;
+    background:
+      radial-gradient(circle at top left, rgba(130, 196, 160, 0.18), transparent 22%),
+      radial-gradient(circle at bottom right, rgba(168, 162, 255, 0.14), transparent 30%),
+      var(--bg);
+    color: var(--text);
+    font-family: 'SF Pro Display', 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   ::selection {
-    background-color: rgba(22, 163, 74, 0.12);
+    background-color: rgba(59, 122, 87, 0.18);
     color: #0f172a;
   }
 
   .dark ::selection {
-    background-color: rgba(22, 163, 74, 0.25);
+    background-color: rgba(125, 211, 163, 0.24);
     color: #f8fafc;
   }
 }
 
 @layer components {
   .glass-panel {
-    @apply bg-white/80 dark:bg-slate-900/70 backdrop-blur-xl border border-slate-200/60 dark:border-slate-700/60 shadow-soft rounded-2xl;
+    @apply border border-white/60 bg-white/70 backdrop-blur-xl shadow-soft rounded-3xl dark:border-slate-700/60 dark:bg-slate-900/65;
   }
 
   .section-shell {
@@ -34,38 +81,32 @@
   }
 
   .card-base {
-    @apply rounded-2xl border border-slate-200/80 bg-white shadow-soft transition-all duration-300 dark:border-slate-800 dark:bg-slate-900;
+    @apply rounded-[1.75rem] border border-[color:var(--border)] bg-[color:var(--card)] shadow-[var(--shadow-soft)] transition-all duration-300 dark:border-slate-800 dark:bg-slate-900;
   }
 
   .card-hover:hover {
-    --tw-translate-y: -0.25rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-    --tw-shadow: 0 12px 40px -4px rgba(16, 24, 40, 0.08), 0 4px 12px -2px rgba(16, 24, 40, 0.04);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    transform: translateY(-2px);
+    box-shadow: 0 22px 44px -24px rgba(15, 23, 42, 0.25);
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-2.5 text-sm font-semibold text-white shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 focus-visible:ring-offset-2;
-  }
-  .btn-primary:hover {
-    --tw-shadow: 0 12px 40px -4px rgba(16, 24, 40, 0.08), 0 4px 12px -2px rgba(16, 24, 40, 0.04);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-[linear-gradient(135deg,#2f6b51_0%,#4f9b73_100%)] px-6 py-2.5 text-sm font-semibold text-white shadow-[0_12px_32px_-18px_rgba(47,107,81,0.75)] transition-all duration-200 hover:-translate-y-0.5 hover:brightness-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40 focus-visible:ring-offset-2;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-6 py-2.5 text-sm font-semibold text-slate-700 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-brand/40 hover:text-brand dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-brand/40 dark:hover:text-brand;
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-[color:var(--border)] bg-white/70 px-6 py-2.5 text-sm font-semibold text-slate-700 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-brand/30 hover:text-brand dark:border-slate-700 dark:bg-slate-900/80 dark:text-slate-200 dark:hover:border-brand/40 dark:hover:text-brand;
   }
 
   .section-heading {
-    font-size: 1.75rem;
-    line-height: 1.25;
-    letter-spacing: -0.01em;
+    font-size: clamp(2rem, 3vw, 3rem);
+    line-height: 1.12;
+    letter-spacing: -0.04em;
     font-weight: 700;
-    @apply text-slate-900 dark:text-white;
+    @apply text-[color:var(--text)] dark:text-white;
   }
 
   .section-subtext {
-    @apply mt-2 max-w-2xl text-base text-slate-500 dark:text-slate-400;
+    @apply mt-3 max-w-2xl text-base text-[color:var(--text-soft)] dark:text-slate-400;
   }
 
   .chip {
@@ -81,15 +122,13 @@
   }
 
   .input-base {
-    @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm text-slate-900 shadow-sm outline-none transition-all duration-200 placeholder:text-slate-400 focus:border-brand focus:ring-2 focus:ring-brand/20 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-50 dark:placeholder:text-slate-500;
+    @apply w-full rounded-2xl border border-[color:var(--border)] bg-white/80 px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition-all duration-200 placeholder:text-slate-400 focus:border-brand focus:ring-2 focus:ring-brand/20 dark:border-slate-700 dark:bg-slate-900/90 dark:text-slate-50 dark:placeholder:text-slate-500;
   }
 
-  /* Lazy-loaded image placeholder */
   img[loading="lazy"] {
     @apply bg-gradient-to-br from-slate-100 to-slate-50 dark:from-slate-800 dark:to-slate-700;
   }
 
-  /* For images with data-src or similar lazy loading implementations */
   .lazy-load-image {
     @apply bg-gradient-to-br from-slate-100 to-slate-50 dark:from-slate-800 dark:to-slate-700;
   }

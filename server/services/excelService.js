@@ -39,6 +39,77 @@ function normalizeCategoryFromSheetName(sheetName) {
     .join(' ');
 }
 
+function normalizeHeaderLabel(value) {
+  return normalizeWhitespace(String(value || '')).toLowerCase().replace(/[^a-z0-9]+/g, ' ');
+}
+
+function parseNumericValue(value) {
+  if (value === null || value === undefined || value === '') return 0;
+  if (typeof value === 'number') return Number.isFinite(value) ? value : 0;
+
+  const numericText = String(value).replace(/[RWF\s,]/g, '').replace(/[()]/g, '');
+  const parsed = Number(numericText);
+  return Number.isFinite(parsed) ? parsed : 0;
+}
+
+function isNonProductRow(row) {
+  if (!Array.isArray(row) || row.length === 0) {
+    return true;
+  }
+
+  const text = normalizeWhitespace(row.join(' ')).toLowerCase();
+  if (!text) return true;
+  if (text.includes('out of stock form')) return true;
+  if (text.includes('report') && text.includes('date')) return true;
+  if (text.includes('inventory list')) return true;
+  if (text.includes('code') && text.includes('product')) return true;
+  return false;
+}
+
+function findHeaderIndex(rawRows) {
+  const productAliases = [
+    'product name',
+    'product',
+    'item name',
+    'item',
+    'name'
+  ];
+
+  return rawRows.findIndex((row) => {
+    if (!Array.isArray(row)) return false;
+    const normalized = row.map((cell) => normalizeHeaderLabel(cell));
+    return normalized.some((cell) => productAliases.includes(cell));
+  });
+}
+
+function buildHeaderMap(headerRow) {
+  const map = {};
+  if (!Array.isArray(headerRow)) {
+    return map;
+  }
+
+  headerRow.forEach((cell, index) => {
+    const normalized = normalizeHeaderLabel(cell);
+    if (!normalized) return;
+    if (!map[normalized]) {
+      map[normalized] = index;
+    }
+  });
+
+  return map;
+}
+
+function getRowValue(row, headerMap, aliases) {
+  for (const alias of aliases) {
+    const index = headerMap[alias];
+    if (index !== undefined && row[index] !== undefined) {
+      return row[index];
+    }
+  }
+
+  return '';
+}
+
 export function parseInventoryFile() {
   if (!fs.existsSync(INVENTORY_FILE_PATH)) {
     throw new Error(`Inventory file not found at ${INVENTORY_FILE_PATH}`);
@@ -56,10 +127,7 @@ export function parseInventoryFile() {
     const category = normalizeCategoryFromSheetName(sheetName);
 
     const rawRows = xlsx.utils.sheet_to_json(sheet, { header: 1, defval: '' });
-    const headerIndex = rawRows.findIndex((row) =>
-      Array.isArray(row) &&
-      row.some((cell) => normalizeWhitespace(cell).toLowerCase() === 'product name')
-    );
+    const headerIndex = findHeaderIndex(rawRows);
 
     if (headerIndex === -1) {
       // eslint-disable-next-line no-console
@@ -67,35 +135,62 @@ export function parseInventoryFile() {
       return;
     }
 
-    const rows = xlsx.utils.sheet_to_json(sheet, { defval: '', range: headerIndex });
+    const headerRow = rawRows[headerIndex] || [];
+    const headerMap = buildHeaderMap(headerRow);
 
-    rows.forEach((row) => {
-      const rawName = row['Product Name'] || '';
-      const rawQuantity = row['Quantity'] || 0;
-      const rawPrice = row['Price'] || 0;
-      const rawCostPrice =
-        row['Cost Price'] ??
-        row['cost price'] ??
-        row['Cost'] ??
-        row['cost'] ??
-        row['Buying Price'] ??
-        row['buying price'] ??
-        row['Buy Price'] ??
-        row['buy price'] ??
-        row['Purchase Price'] ??
-        row['purchase price'] ??
-        0;
+    rawRows.slice(headerIndex + 1).forEach((row) => {
+      if (!Array.isArray(row) || isNonProductRow(row)) {
+        return;
+      }
+
+      const rawName = getRowValue(row, headerMap, [
+        'product name',
+        'product',
+        'item name',
+        'item',
+        'name'
+      ]);
+
+      const rawQuantity = getRowValue(row, headerMap, [
+        'quantity',
+        'qty',
+        'stock',
+        'available quantity',
+        'available qty',
+        'units'
+      ]);
+
+      const rawPrice = getRowValue(row, headerMap, [
+        'price',
+        'selling price',
+        'unit price',
+        'amount',
+        'rate'
+      ]);
+
+      const rawCostPrice = getRowValue(row, headerMap, [
+        'cost price',
+        'cost',
+        'buying price',
+        'buy price',
+        'purchase price',
+        'unit cost'
+      ]);
 
       const nameClean = normalizeWhitespace(rawName);
       if (!nameClean) {
         return;
       }
 
+      if (nameClean.toLowerCase().includes('out of stock')) {
+        return;
+      }
+
       const company = normalizeCompanyFromName(nameClean);
 
-      const price = Number(rawPrice) || 0;
-      const quantity = Number(rawQuantity) || 0;
-      const costPrice = Number(rawCostPrice) || 0;
+      const price = parseNumericValue(rawPrice);
+      const quantity = parseNumericValue(rawQuantity);
+      const costPrice = parseNumericValue(rawCostPrice);
 
       allProducts.push({
         id: idCounter++,
