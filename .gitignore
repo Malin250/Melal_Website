@@ -129,3 +129,4 @@ dist-ssr
 .wwebjs_auth/
 .wwebjs_cache/
 server/cache/
+public/products.json
