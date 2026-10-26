@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --bg: #f5f5f7;
+  --bg: #f7f8f3;
   --bg-elevated: rgba(255, 255, 255, 0.8);
   --card: rgba(255, 255, 255, 0.9);
   --card-strong: #ffffff;
   --muted: #f2f2f4;
-  --surface: #f8f8f7;
+  --surface: #f9faf6;
   --text: #1d1d1f;
   --text-soft: #52525b;
   --text-faint: #71717a;
   --border: rgba(24, 24, 27, 0.08);
-  --brand: #3b7a57;
-  --brand-strong: #214f3a;
-  --brand-soft: #e8f3ec;
+  --brand: #267347;
+  --brand-strong: #184d31;
+  --brand-soft: #e9f4e8;
   --shadow-soft: 0 16px 40px -24px rgba(15, 23, 42, 0.24);
 }
 
@@ -44,10 +44,7 @@
   }
 
   body {
-    background:
-      radial-gradient(circle at top left, rgba(130, 196, 160, 0.18), transparent 22%),
-      radial-gradient(circle at bottom right, rgba(168, 162, 255, 0.14), transparent 30%),
-      var(--bg);
+    background: var(--bg);
     color: var(--text);
     font-family: 'SF Pro Display', 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
   }
@@ -77,7 +74,7 @@
   }
 
   .section-shell {
-    @apply max-w-6xl mx-auto px-5 sm:px-6 lg:px-8;
+    @apply max-w-7xl mx-auto px-5 sm:px-6 lg:px-8;
   }
 
   .card-base {

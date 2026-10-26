@@ -1,12 +1,9 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
-import { X, ArrowUpDown, Search, SlidersHorizontal, Sparkles, Plus, ChevronDown } from 'lucide-react';
+import { X, ArrowUpDown, Search, SlidersHorizontal, Sparkles, Plus, ChevronDown, ImageOff } from 'lucide-react';
 import { useCart } from '../context/CartContext.jsx';
 import { InteractiveProductCard } from '../components/products/InteractiveProductCard.jsx';
-
-const PLACEHOLDER_IMAGE =
-  'https://images.pexels.com/photos/4397924/pexels-photo-4397924.jpeg?auto=compress&cs=tinysrgb&w=800';
 
 export function ProductsPage() {
   const [products, setProducts] = useState([]);
@@ -20,9 +17,10 @@ export function ProductsPage() {
     const cat = searchParams.get('category');
     return cat ? [cat.toLowerCase().trim()] : [];
   });
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState(() => searchParams.get('search') || '');
   const [debouncedSearch, setDebouncedSearch] = useState('');
   const [quickViewProduct, setQuickViewProduct] = useState(null);
+  const [quickViewImageFailed, setQuickViewImageFailed] = useState(false);
   const [filtersOpen, setFiltersOpen] = useState(true);
 
   useEffect(() => {
@@ -69,6 +67,16 @@ export function ProductsPage() {
     const id = setTimeout(() => setDebouncedSearch(search.trim().toLowerCase()), 200);
     return () => clearTimeout(id);
   }, [search]);
+
+  useEffect(() => {
+    const query = searchParams.get('search') || '';
+    setSearch(query);
+    setDebouncedSearch(query.trim().toLowerCase());
+  }, [searchParams]);
+
+  useEffect(() => {
+    setQuickViewImageFailed(false);
+  }, [quickViewProduct?.imageUrl]);
 
   const companies = useMemo(() => {
     const set = new Set();
@@ -158,7 +166,7 @@ export function ProductsPage() {
   return (
     <div className="pb-12">
       {/* Page header */}
-      <header className="sticky top-0 z-30 -mx-5 bg-white/80 px-5 pb-3 pt-1 backdrop-blur-xl dark:bg-slate-950/80 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+      <header className="relative z-20 -mx-5 bg-white/95 px-5 pb-3 pt-1 backdrop-blur-xl dark:bg-slate-950/95 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
         {/* Title row + toggle */}
         <div className="flex items-center justify-between py-2">
           <div>
@@ -414,10 +422,9 @@ export function ProductsPage() {
                 key={product.id || product.name}
                 product={product}
                 index={idx}
-                placeholderImage={PLACEHOLDER_IMAGE}
                 isAdded={addedId === product.id}
                 // Inject existing quick-view state handler here.
-                onQuickView={() => setQuickViewProduct(product)}
+                onQuickView={() => { setQuickViewImageFailed(false); setQuickViewProduct(product); }}
                 // Inject existing cart action handler here (preserves CartContext logic).
                 onAddToCart={() => handleAddToCart(product)}
               />
@@ -483,13 +490,21 @@ export function ProductsPage() {
                 <X className="h-4 w-4" />
               </motion.button>
               <div className="grid gap-5 p-5 md:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] md:items-start">
-                <div className="overflow-hidden rounded-xl bg-slate-100 dark:bg-slate-800">
-                  <img
-                    src={quickViewProduct.imageUrl || PLACEHOLDER_IMAGE}
-                    alt={quickViewProduct.name}
-                    className="h-full w-full object-cover"
-                    loading="lazy"
-                  />
+                <div className="flex aspect-square items-center justify-center overflow-hidden rounded-xl bg-[#f7f8f3] dark:bg-slate-800">
+                  {quickViewProduct.imageUrl && !quickViewImageFailed ? (
+                    <img
+                      src={quickViewProduct.imageUrl}
+                      alt={quickViewProduct.name}
+                      className="h-full w-full object-contain p-5"
+                      loading="lazy"
+                      onError={() => setQuickViewImageFailed(true)}
+                    />
+                  ) : (
+                    <div className="flex flex-col items-center gap-2 text-slate-400">
+                      <ImageOff className="h-8 w-8" strokeWidth={1.5} />
+                      <span className="text-xs">Product photo unavailable</span>
+                    </div>
+                  )}
                 </div>
                 <div className="space-y-3 text-sm">
                   <span className="inline-block rounded-lg bg-brand/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-brand">

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
-import { Check, Plus } from 'lucide-react';
+import { Check, ImageOff, Plus } from 'lucide-react';
 
 const cardVariants = {
   hidden: { opacity: 0, y: 18 },
@@ -16,10 +16,12 @@ export function InteractiveProductCard({
   index,
   onQuickView,
   onAddToCart,
-  isAdded,
-  placeholderImage
+  isAdded
 }) {
   const reducedMotion = useReducedMotion();
+  const [imageFailed, setImageFailed] = useState(false);
+
+  useEffect(() => setImageFailed(false), [product.imageUrl]);
 
   return (
     <motion.article
@@ -28,7 +30,7 @@ export function InteractiveProductCard({
       whileInView="visible"
       viewport={{ once: true, amount: 0.15 }}
       variants={cardVariants}
-      className="group relative overflow-hidden rounded-3xl border border-emerald-100/80 bg-white shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-soft-lg dark:border-emerald-900/30 dark:bg-slate-900"
+      className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_8px_22px_-18px_rgba(25,45,35,0.35)] transition-all duration-300 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-[0_18px_34px_-20px_rgba(25,45,35,0.35)] dark:border-slate-800 dark:bg-slate-900"
     >
       <button
         type="button"
@@ -39,19 +41,32 @@ export function InteractiveProductCard({
           <motion.div
             whileHover={reducedMotion ? undefined : { scale: 1.03 }}
             transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="aspect-[4/3] w-full bg-slate-50 dark:bg-slate-800"
+            className="relative aspect-square w-full bg-[#f7f8f3] dark:bg-slate-800"
           >
-            <img
-              src={product.imageUrl || placeholderImage}
-              alt={product.name}
-              className="h-full w-full object-cover"
-              loading="lazy"
-            />
+            {product.imageUrl && !imageFailed ? (
+              <img
+                src={product.imageUrl}
+                alt={product.name}
+                className="h-full w-full object-contain p-4"
+                loading="lazy"
+                onError={() => setImageFailed(true)}
+              />
+            ) : (
+              <div className="flex h-full flex-col items-center justify-center gap-2 px-4 text-center text-slate-400">
+                <ImageOff className="h-7 w-7" strokeWidth={1.5} />
+                <span className="text-[11px] font-medium">Product photo unavailable</span>
+              </div>
+            )}
           </motion.div>
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/35 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
           <span className="absolute left-3 top-3 rounded-xl border border-white/60 bg-white/90 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-emerald-900 shadow-sm backdrop-blur-sm dark:border-slate-700 dark:bg-slate-900/85 dark:text-emerald-200">
             {product.category || 'Uncategorised'}
           </span>
+          {product.imageStatus === 'closest' && !imageFailed && (
+            <span className="absolute right-3 top-3 rounded-xl bg-amber-50/95 px-2 py-1 text-[9px] font-bold uppercase tracking-wide text-amber-800 shadow-sm">
+              Similar pack
+            </span>
+          )}
         </div>
 
         <div className="p-4">

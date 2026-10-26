@@ -11,6 +11,7 @@
     "server:start": "node server/index.js",
     "prebuild": "node scripts/generate-products.js",
     "build": "vite build",
+    "test": "npm run build",
     "preview": "vite preview",
     "lint": "eslint src --ext jsx,js --report-unused-disable-directives --max-warnings=0"
   },

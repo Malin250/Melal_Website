@@ -4,7 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { PORT } from './config.js';
 import { getProducts } from './services/excelService.js';
-import { enrichProductsWithShadowImages } from './services/imageService.js';
+import { enrichProductsWithImages } from './services/imageService.js';
 import {
   getWhatsAppStatus,
   sendOwnerWhatsAppMessage
@@ -74,7 +74,7 @@ function applyFiltersAndSorting(products, query) {
 app.get('/api/products', async (req, res) => {
   try {
     const baseProducts = getProducts();
-    const withImages = enrichProductsWithShadowImages(baseProducts);
+    const withImages = enrichProductsWithImages(baseProducts);
     const processed = applyFiltersAndSorting(withImages, req.query);
 
     // Debug log for API response size

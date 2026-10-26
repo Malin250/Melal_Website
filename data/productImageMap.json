@@ -1,0 +1,554 @@
+{
+  "pringles original 165g": {
+    "imageUrl": "https://www.trada.ro/img/chipsuri-pringles-original-cu-sare-165-g-150411html_tr-299689-large.jpg",
+    "alt": "Pringles Original 165g Can",
+    "match": "matched",
+    "source": "Chipsuri Pringles Original, cu Sare, 165 g Oferta Pret - Trada.r - Trada Marketplace"
+  },
+  "pringles sour cream onion 165g": {
+    "imageUrl": "https://cdn.bmstores.co.uk/images/hpcProductImage/imgSource/372212-pringles-sour-cream-and-onion-165g.jpg",
+    "alt": "Pringles Sour Cream & Onion 165g Tube",
+    "match": "matched",
+    "source": "Pringles Sour Cream & Onion 165g | Food | Crisps - B&M"
+  },
+  "pringles hot spices 165g": {
+    "imageUrl": "https://www.candyandsweetpalace.com/image/cache/catalog/Pringles/Pringles%20Hot%20%20Spicy%20165gr%20voorkant-1200x1200.jpg",
+    "alt": "Pringles Hot & Spicy 165g Can",
+    "match": "matched",
+    "source": "Pringles Hot  Spicy 165gr"
+  },
+  "pringles original 40g": {
+    "imageUrl": "https://www.sedovin.com/3774-large_default/pringles-original-40g.jpg",
+    "alt": "Pringles Original 40 g Can",
+    "match": "matched",
+    "source": "Pringles original 40 g"
+  },
+  "pringles sour cream onion 40g": {
+    "imageUrl": "https://dj0m4io8o9yuz.cloudfront.net/storage/media/catalog/products/410/0/4100000400/150006-pringles-sco-40g.jpg?id=1648807049",
+    "alt": "Pringles Sour Cream & Onion 40g Can",
+    "match": "matched",
+    "source": "Πατατάκια Sour Cream & Onion Pringles (40 g) | e-Fresh.gr"
+  },
+  "sunveat butter cookies 100g": {
+    "imageUrl": "https://cdn.mafrservices.com/sys-master-root/h67/h93/12457052864542/117634_Main.jpg",
+    "alt": "Sunveat Butter Cookies 100g",
+    "match": "matched",
+    "source": "Buy Sunveat Butter Cookies 100g Online | Carrefour Kenya"
+  },
+  "sunveat cashew cookies 100g": {
+    "imageUrl": "https://cdn.mafrservices.com/sys-master-root/h1d/h3b/12457053323294/117635_Main.jpg",
+    "alt": "Sunveat Cashew Cookies 100 g",
+    "match": "matched",
+    "source": "Buy Sunveat Cashew Cookies 100g Online | Carrefour Kenya"
+  },
+  "sunveat mixed nut cookies 100g": {
+    "imageUrl": "https://cdn.shopaccino.com/asianmart/products/cookies-01-scaled-197834936245542_l.jpg?v=718%3Fparam%3D1",
+    "alt": "SunVeat Mixed Nut Cookies Packaging",
+    "match": "closest",
+    "source": "SUNVEAT BUTTER COOKIES 100GM"
+  },
+  "sunveat koko coffee 200g": {
+    "imageUrl": "https://selmo.ug/wp-content/uploads/2023/08/Sunveat-Koko-Coffee.jpg",
+    "alt": "SunVeat Koko Coffee Biscuits",
+    "match": "matched",
+    "source": "Sunveat Koko Coffee 24pkt X 200gm – SelMo – Sell Smart. Earn More"
+  },
+  "golden butter cookies 200g": {
+    "imageUrl": "https://cdn.mafrservices.com/sys-master-root/hee/h44/26756830855198/130073_main.jpg?im=Resize%3D480",
+    "alt": "Golden Butter Cookies 200g",
+    "match": "matched",
+    "source": "Buy GOLDEN BUTTER COOKIES 200G Online | Carrefour Kenya"
+  },
+  "golden scotch shortcake biscuits 1kg jar": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2024/08/free_sawaciti04e5fc0e32b66ff69bd5c051145351ce1723042903.jpg",
+    "alt": "Golden Scotch Short Cake Biscuits Jar",
+    "match": "matched",
+    "source": "GOLDEN BISCUITS SCOTCH SHORT CAKE JAR 1KG on Isokko"
+  },
+  "golden ginger snaps biscuit 1kg jar": {
+    "imageUrl": "https://cdn.mafrservices.com/pim-content/KEN/media/product/22201/1748239203/22201_main.jpg",
+    "alt": "Golden Ginger Snaps Biscuit Jar",
+    "match": "matched",
+    "source": "Buy Golden Ginger Snaps Biscuits 1Kg Online | Carrefour Kenya"
+  },
+  "golden digestive biscuit 1kg jar": {
+    "imageUrl": "https://cdn.mafrservices.com/pim-content/KEN/media/product/22231/1748239203/22231_main.jpg",
+    "alt": "Golden High Fibre Digestive Biscuits Jar",
+    "match": "matched",
+    "source": "Buy Golden High Fibre Digestive Biscuit 1kg Online | Carrefour Kenya"
+  },
+  "adma chocobite biscuit 75g": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2024/12/87_67611d4bc6732.png",
+    "alt": "ADMA Choco Bite Chocolate Biscuits",
+    "match": "matched",
+    "source": "ADMA CHOCO BITE on Isokko"
+  },
+  "adma rio biscuit 75g": {
+    "imageUrl": "https://kanis.rw/storage/app/public/product/2024-12-09-6756ad738e656.png",
+    "alt": "ADMA Rio Chocolate Biscuit Packaging",
+    "match": "matched",
+    "source": "ADMA RIO/CHOCOLATE BISCUIT"
+  },
+  "adma bourbon biscuit 75g": {
+    "imageUrl": "https://media.licdn.com/dms/image/v2/C4D22AQFfHS7N9w_h5w/feedshare-shrink_800/feedshare-shrink_800/0/1627039229300?e=2147483647&t=rkdDIsvbD9yIZb8KERtVbBAvQGI4Bv0TLwYcuKAUaho&v=beta",
+    "alt": "ADMA Bourbon Biscuits and Coffee",
+    "match": "matched",
+    "source": "https://lnkd.in/dW5YNkf | Adma Rwanda Ltd"
+  },
+  "adma family biscuit 150g": {
+    "imageUrl": "https://murukali.com/cdn/shop/files/Adma-Family-Biscuits-Murukali.com-185546976_1200x1200.jpg?v=1760625439",
+    "alt": "Adma Family Biscuits Packaging",
+    "match": "matched",
+    "source": "Adma Family Biscuits - Murukali.com"
+  },
+  "adma nice biscuit 150g": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2025/01/359_677b8f5b5e250_compressed_501kb_10.png",
+    "alt": "Adma Nice Sugar Sprinkled Biscuits Packaging",
+    "match": "matched",
+    "source": "Adma Nice Sugar Sprinkled Biscuits on Isokko"
+  },
+  "winnaz salted potato crisps 125g": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2025/01/185_6791304b06dfb.png",
+    "alt": "Winnaz Salted Potato Crisps",
+    "match": "matched",
+    "source": "\\nWinnaz Salted Potato Crisps 125g on Isokko. Sold by Store X Rwanda. Available in\\n   Kigali, Rwanda. Groceries"
+  },
+  "sunveat creamtreat 160g": {
+    "imageUrl": "https://cdn.mafrservices.com/sys-master-root/h33/h36/12457059090462/117648_Main.jpg",
+    "alt": "Sunveat CreamTreat Assorted Cream Biscuits",
+    "match": "matched",
+    "source": "\"Buy Sunveat Cream Treat Assorted Wafer 160g Online | Carrefour Kenya"
+  },
+  "bakemate kreme e chocolate 140g": {
+    "imageUrl": "https://apimedias.treew.com/imgproducts/middle/276001.jpg",
+    "alt": "BakeMate Kreme-e Chocolate Sandwich Biscuits",
+    "match": "matched",
+    "source": "\"CompreMarket - Galletas sándwich Kreme-e sabor chocolate BakeMate"
+  },
+  "bakemate kreme e orange 140g": {
+    "imageUrl": "https://media.licdn.com/dms/image/v2/C5622AQFnPvE4blxr5g/feedshare-shrink_1280/feedshare-shrink_1280/0/1552454800700?e=2147483647&t=Z1sO_ignEua6O2ZKBm6EnI8vcDx7oBRzLWuALnD0f7E&v=beta",
+    "alt": "BakeMate Kreme-e Rich Orange Biscuits",
+    "match": "matched",
+    "source": "\"#flavors #biscuits #chocolates #confectionery #cookies #kreme #tasty #snacks #wednesdaywisdom #marketing #distributor #sales #distribution #manufacturing #flavoured #cream #wafer #bakemate #candies… | BAKEMATE"
+  },
+  "magico petit beurre 800g": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2025/12/IMG-20251222-WA0148_694adb112b3eb.jpg",
+    "alt": "Magico Petit Beurre 800g Pack",
+    "match": "matched",
+    "source": "\"Magico Petit Beurre 800gr RWF5,900 | Isokko · Kigali"
+  },
+  "manji milkstar 200g": {
+    "imageUrl": "https://murukali.com/cdn/shop/files/Manji-Milkstar-Milk-Biscuits-200g-Murukali.com-140230590_1200x1156.jpg?v=1757869392",
+    "alt": "Manji Milkstar Milk Biscuits 200g",
+    "match": "matched",
+    "source": "\"Manji Milkstar Milk Biscuits 200g - Murukali.com"
+  },
+  "brittannia good day butter biscuit 200g": {
+    "imageUrl": "https://www.jiomart.com/images/product/original/491551977/britannia-good-day-butter-cookies-200-g-product-images-o491551977-p491551977-0-202311281825.jpg?im=Resize%3D%281000%2C1000%29",
+    "alt": "Britannia Good Day Butter Cookies 200 g",
+    "match": "matched",
+    "source": "\"Buy Britannia Good Day Butter Cookies 200 g Online at Best Prices in India - JioMart."
+  },
+  "britannia good day cashew biscuit 200g": {
+    "imageUrl": "https://ik.imagekit.io/wlfr/wellness/images/products/317455-1.jpg",
+    "alt": "Britannia Good Day Cashew Cookies",
+    "match": "matched",
+    "source": "\\nBuy Britannia Good Day Biscuits Rich Cashew 200g  Online at Best Prices | Wellness Forever"
+  },
+  "britannia nutro chocolate 75g": {
+    "imageUrl": "https://eraa.ca/cdn/shop/files/br-nutru-wafers-new-chocolate-75g_1.webp?crop=center&height=1200&v=1756242819&width=1200",
+    "alt": "Britannia Nutro Chocolate Kreme Wafers",
+    "match": "matched",
+    "source": "\"Britannia Nutro Chocolate Cream Wafers 75g – Eraa Supermarket"
+  },
+  "britannia nutro vanilla 75g": {
+    "imageUrl": "https://cdn.mafrservices.com/pim-content/KEN/media/product/39830/1747130403/39830_main.jpg",
+    "alt": "Nutro Vanilla Cream Biscuits",
+    "match": "matched",
+    "source": "\"Buy Nutro Vanilla Cream Biscuit 75G Online | Carrefour Kenya"
+  },
+  "the sweet factory apple 50pieces": {
+    "imageUrl": "https://murukali.com/cdn/shop/files/WhatsAppImage2025-12-19at18.08.24_1024x1024.jpg?v=1766160960",
+    "alt": "The Sweet Factory Green Apple Candy Pillow Pack",
+    "match": "matched",
+    "source": "\"The Sweet Factory Green Apple Candy – Pillow Pack Edition 50 pcs 200g — Murukali.com"
+  },
+  "the sweet factory frozen ice mint 25pieces": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2025/10/Screenshot_20251029-132748_690222665e33c_compressed_384kb_10.png",
+    "alt": "The Sweet Factory Frozen Mint Ice Cubes",
+    "match": "matched",
+    "source": "\"The Sweet Factory Frozen Mint lce Cubes 25pcs on Isokko. Sold by Igihozo Supermarket. Available in\\n   Kigali, Rwanda. Home & Kitchen"
+  },
+  "adma marie biscuit": {
+    "imageUrl": "https://admarwanda.com/wp-content/uploads/2025/10/marie-greennn-1024x638.png",
+    "alt": "ADMA New Marie Biscuits Packaging",
+    "match": "matched",
+    "source": "\"Adma Biscuits - admarwanda"
+  },
+  "adma alphabetic biscuit": {
+    "imageUrl": "https://admarwanda.com/wp-content/uploads/2025/03/DSC_7527a-780x1024.png",
+    "alt": "Jambo ADMA Biscuits Packaging",
+    "match": "closest",
+    "source": "Adma Biscuits"
+  },
+  "riham biscuit": {
+    "imageUrl": "https://murukali.com/cdn/shop/files/Riham-Biscuit-murukali-com-7570.jpg",
+    "alt": "Riham Biscuit Packaging Display",
+    "match": "matched",
+    "source": "\"Riham Biscuit | Best Price in 2024 at murukali.com — Murukali.com"
+  },
+  "cadbury dairy milk bubbly milk chocolate 150g": {
+    "imageUrl": "https://assets.woolworthsstatic.co.za/Cadbury-Dairy-Milk-Bubbly-Chocolate-150-g-6001065600260.jpg?V=kkEo&o=eyJidWNrZXQiOiJ3dy1vbmxpbmUtaW1hZ2UtcmVzaXplIiwia2V5IjoiaW1hZ2VzL2VsYXN0aWNlcmEvcHJvZHVjdHMvaGVyby8yMDIzLTA2LTEzLzYwMDEwNjU2MDAyNjBfaGVyby5qcGcifQ",
+    "alt": "Cadbury Dairy Milk Bubbly Chocolate Bar",
+    "match": "matched",
+    "source": "\"Cadbury Dairy Milk Bubbly Chocolate 150 g | Woolworths.co.za"
+  },
+  "cadbury dairy milk rum raisin chocolate 80g": {
+    "imageUrl": "https://assets.woolworthsstatic.co.za/Cadbury-Dairy-Milk-Rum-Raisin-Flavoured-Chocolate-Bar-80-g-6001065601106.jpg?V=iOyA&o=eyJidWNrZXQiOiJ3dy1vbmxpbmUtaW1hZ2UtcmVzaXplIiwia2V5IjoiaW1hZ2VzL2VsYXN0aWNlcmEvcHJvZHVjdHMvaGVyby8yMDIyLTA4LTI1LzYwMDEwNjU2MDExMDZfaGVyby5qcGcifQ",
+    "alt": "Cadbury Dairy Milk Rum & Raisin Chocolate Bar",
+    "match": "matched",
+    "source": "\\nCadbury Dairy Milk Rum & Raisin Flavoured Chocolate Bar 80 g | Woolworths.co.za"
+  },
+  "cadbury bournville dark chocolate 80g": {
+    "imageUrl": "https://hillcrestkwikspar.co.za/shop/public/6/images/products/resize_KAtoLro1_1653561071_3093.jpg",
+    "alt": "Cadbury Bournville Classic Dark Chocolate 80g",
+    "match": "matched",
+    "source": "\"BOURNVILLE CLASSIC DARK CHOCOLATE 80G CADBURY SK600106560112"
+  },
+  "mirinda fruity drink 2l": {
+    "imageUrl": "https://d16zmt6hgq1jhj.cloudfront.net/product/23417/4YddLn5YyFs8Q50y8GmvENfJdMrwqgPsLolv4lPm.png",
+    "alt": "Mirinda Fruity Mixed Berry 2L Bottle",
+    "match": "matched",
+    "source": "\"Mirinda Fruity Mixed Berry 2Ltr"
+  },
+  "pepsi cola drink 2l": {
+    "imageUrl": "https://pngimg.com/uploads/pepsi/pepsi_PNG4.png",
+    "alt": "Pepsi 2‑Liter Cola Bottle",
+    "match": "matched",
+    "source": "\"Пепси, Pepsi PNG фото"
+  },
+  "mirinda apple drink 500ml": {
+    "imageUrl": "https://owinosupermarket.com/cdn/shop/files/IMG_7459-scaled.jpg?v=1757113789",
+    "alt": "Mirinda Apple Soda Bottle",
+    "match": "matched",
+    "source": "\"Mirinda Apple"
+  },
+  "mirinda pineapple drink 500ml": {
+    "imageUrl": "https://americancandyuk.co.uk/cdn/shop/files/Mirinda-Pineapple-Flavour-12x5000ml.png?v=1726492416&width=1080",
+    "alt": "Mirinda Pineapple Flavour 500ml",
+    "match": "matched",
+    "source": "Mirinda Pineapple Flavour 500ml"
+  },
+  "mirinda fruity drink 500ml": {
+    "imageUrl": "https://cdn.mafrservices.com/sys-master-root/hfb/hf0/62391997333534/219620_main.jpg?im=Resize%3D480%3Fim%3DResize%3D%2860%2C60%29",
+    "alt": "Mirinda Fruity Mixed Berry Soda Bottle",
+    "match": "matched",
+    "source": "\"Buy Mirinda Fruity Carbonated Mixed Berry Soft Drink 500ml Online | Carrefour Kenya"
+  },
+  "mirinda orange drink 500ml": {
+    "imageUrl": "https://static-01.daraz.pk/p/aefc22322735df9fa68c6c5ccbe2b679.jpg",
+    "alt": "Mirinda 500ml Orange Flavor Bottle",
+    "match": "matched",
+    "source": "\"Mirinda 500ml Price in Pakistan - View Latest Collection of Asian Health Drinks"
+  },
+  "mountain dew drink 500ml": {
+    "imageUrl": "https://bf1af2.akinoncloudcdn.com/products/2024/09/11/66999/c0b7ea86-24c3-41e2-ab31-cb2b8094108b_size3840_cropCenter.jpg",
+    "alt": "Mountain Dew 500 ml Bottle",
+    "match": "matched",
+    "source": "\"Mountain Dew Bottle 500 ml Online at Best Price | Lulu KSA"
+  },
+  "pepsi cola drink 500ml": {
+    "imageUrl": "https://assets.iceland.co.uk/i/iceland/pepsi_regular_cola_bottle_500ml_94624_T596.jpg",
+    "alt": "Pepsi Regular Cola 500ml Bottle",
+    "match": "matched",
+    "source": "\"Pepsi Cola Bottles 500ml | Iceland Foods"
+  },
+  "fanta citron drink 500ml": {
+    "imageUrl": "https://www.matthewclark.co.uk/ProductImages/00029520.jpg",
+    "alt": "Fanta Lemon PET 500ml Bottle",
+    "match": "matched",
+    "source": "\"Fanta Lemon PET | Matthew Clark"
+  },
+  "fanta orange drink 500ml": {
+    "imageUrl": "https://www.kff.co.uk/images_products/HD_244_15cb4dabb90475fca87831ebf53996e1.jpg",
+    "alt": "Fanta Orange 500ml Bottle",
+    "match": "matched",
+    "source": "\"Bulk Buy FANTA Orange"
+  },
+  "sprite drink 500ml": {
+    "imageUrl": "https://static-01.daraz.pk/p/e4a25eda130237fb736cce372bb9fbab.jpg",
+    "alt": "Sprite 500 mL Bottle",
+    "match": "matched",
+    "source": "\"Sprite - 500 Ml Price in Pakistan - View Latest Collection of Asian Health Drinks"
+  },
+  "fanta pineapple drink 500ml": {
+    "imageUrl": "https://media.sobeys.com/screen/1321092_EA_ml_primary_front_na_040325_VOILA-S_8c8e50d0c9a9409135750d10c6510a4f16381d04.JPG",
+    "alt": "Fanta Pineapple Sparkling Beverage",
+    "match": "matched",
+    "source": "\"Buy Fanta Sparkling Beverage Pineapple 500 ml"
+  },
+  "cocacola drink 500ml": {
+    "imageUrl": "https://www.kff.co.uk/images_products/HD_233_77df88bee240f16509f179d983602473.jpg",
+    "alt": "Coca‑Cola Classic 500ml Bottle",
+    "match": "matched",
+    "source": "\"Bulk Buy COCA-COLA Classic"
+  },
+  "fanta citron drink 1 5l": {
+    "imageUrl": "https://halalcourses.com/3840-fpf_image/fanta-citron.jpg",
+    "alt": "Fanta Citron 1.5L Bottle",
+    "match": "matched",
+    "source": "\\nFANTA - \\tCitron"
+  },
+  "fanta orange drink 1 5l": {
+    "imageUrl": "https://raspada.shop/cdn/shop/products/71Ru7UZgq9L._AC_SL1500_1445x.jpg?v=1668426906",
+    "alt": "Fanta Orange 1.5L Bottle",
+    "match": "matched",
+    "source": "\"Fanta Orange 1,5L"
+  },
+  "sprite drink 1 5l": {
+    "imageUrl": "https://shopsuki.ph/cdn/shop/files/102051446_9384562e-4719-4334-8fea-71c17efb1a05_1024x.jpg?v=1764042054",
+    "alt": "Sprite 1.5L Bottle",
+    "match": "matched",
+    "source": "\"Sprite 1.5L"
+  },
+  "cocacola drink 1 5l": {
+    "imageUrl": "https://img.ep-cdn.com/i/500/500/wr/wrdyfoplvmuhkctesqjx/coca-cola-1-5l-cene.jpg",
+    "alt": "Coca‑Cola 1.5 L Bottle",
+    "match": "matched",
+    "source": "\"Coca-Cola 1,5l | Eponuda.com"
+  },
+  "cocacola zero drink 500l": {
+    "imageUrl": "https://dutchshopper.com/cdn/shop/files/300450.png?v=1736658828",
+    "alt": "Coca-Cola Zero Sugar 500ml Bottle",
+    "match": "matched",
+    "source": "Coca-Cola Zero Suiker"
+  },
+  "evervess tonic 500l": {
+    "imageUrl": "https://cdn.sezamo.ro/images/grocery/products/12326/12326-1708506406093.jpg",
+    "alt": "Evervess Tonic Water Bottle",
+    "match": "matched",
+    "source": "\"Evervess Tonic Bautura carbogazoasa sticla"
+  },
+  "malti apple 500ml": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2025/06/Screenshot_20250627-191015_685ed7fba0a2d.png",
+    "alt": "Malti Apple-Flavored Malt Drink",
+    "match": "matched",
+    "source": "\"Malt Drink Apple on Isokko. Sold by Kimironko Market. Available in\\n   Kigali, Rwanda. Groceries"
+  },
+  "smoothie yellow fruticana drink 500l": {
+    "imageUrl": "https://cdn-prd-02.pnp.co.za/sys-master/images/hf2/h39/15804099297310/silo-product-image-v2-04Sep2025-180054-6009711326793-Straight_on-350327-919_515Wx515H",
+    "alt": "Fruticana Yellow Smoothie Bottle",
+    "match": "matched",
+    "source": "\"Pick n Pay Online Shopping"
+  },
+  "smoothie orange fruticana drink 500l": {
+    "imageUrl": "https://www.bulkchoice.co.za/cdn/shop/files/Orange.jpg?v=1763556433",
+    "alt": "Fruticana Orange Smoothie Bottle",
+    "match": "matched",
+    "source": "\"Fruiticana Smoothie Orange 500ml"
+  },
+  "cheetah energy drink 300ml": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2025/07/Screenshot_20250725-093535_6883342ac08f2.png",
+    "alt": "Cheetah Energy Drink Bottle",
+    "match": "matched",
+    "source": "\"Cheetah Energy drink 300ml on Isokko. Sold by Kimironko Market. Available in\\n   Kigali, Rwanda. Groceries"
+  },
+  "azam embe 300ml": {
+    "imageUrl": "https://marafikimart.com/cdn/shop/files/EMBE300ML-306.jpg?v=1691505336",
+    "alt": "Azam Embe Mango Fruit Juice Drink",
+    "match": "matched",
+    "source": "\"AZAM EMBE MANGO JUICY 300ML\\n – Marafiki Mart"
+  },
+  "inyange apple 1l": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2025/04/INYANGEAPPLEJUICE1L_68077f031b78d.png",
+    "alt": "Inyange Premium Apple Juice 1L",
+    "match": "matched",
+    "source": "\"INYANGE APPLE JUICE 1L | Isokko · Amper Supermarket, Kigali"
+  },
+  "inyange mango 1l": {
+    "imageUrl": "https://murukali.com/cdn/shop/files/Inyange-Juice-Litre-Carton-12pcs-murukali-com-5542.jpg",
+    "alt": "Inyange Premium Mango Fruit Nectar",
+    "match": "matched",
+    "source": "\"Inyange Juice Litre Carton 12pcs | Best Price in 2024 at murukali.com — Murukali.com"
+  },
+  "inyange passion 1l": {
+    "imageUrl": "https://murukali.com/cdn/shop/files/Inyange-Passion-Premium-Juice-L-murukali.com-55683691_600x600.jpg?v=1747502426",
+    "alt": "Inyange Premium Passion Fruit Nectar",
+    "match": "matched",
+    "source": "\"Inyange Passion Premium Jus L | Meilleur prix en 2024 sur murukali.com — Murukali.com"
+  },
+  "inyange cocktail 1l": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2025/09/Screenshot_20250923-023931_68d1f27570839_compressed_540kb_10.png",
+    "alt": "Inyange Premium Cocktail Fruit Nectar",
+    "match": "matched",
+    "source": "\"Inyange Cocktail Fruit Juice | Isokko · Kigali"
+  },
+  "inyange milk 1l": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2024/10/INYANGETETRAWHOLEUHTMILK1LX123_671977ed0a0da.jpg",
+    "alt": "Inyange Whole Milk UHT 1L Carton",
+    "match": "matched",
+    "source": "\"Inyange milk 1L | Isokko · Simba Supermarket, Kigali"
+  },
+  "delmonte mixed berries": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2025/04/DelMonteMixedberriesJuiceBlend1L_6807e14722a5f.png",
+    "alt": "Del Monte Mixed Berries Juice Blend",
+    "match": "matched",
+    "source": "DelMonte Mixed Berries Juice Blend on Isokko"
+  },
+  "delmonte mango": {
+    "imageUrl": "https://res.cloudinary.com/dyc0ieeyu/image/upload/v1604518870/products/delmonte-mango.jpg",
+    "alt": "Del Monte Mango Juice Blend",
+    "match": "matched",
+    "source": "\\nDelmonte Mango|Delmonte Mixed Berry, Delmonte Mango - Dial a Drink Kenya"
+  },
+  "savanah strawberry 2l": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2024/11/51_67307261b515e_compressed_507kb_10.png",
+    "alt": "Savanah Strawberry Fruit Drink",
+    "match": "matched",
+    "source": "\"Savanah Strawberry Fruit Drink Juice on Isokko. Sold by Simba Supermarket. Available in\\n   Kigali, Rwanda. Groceries"
+  },
+  "savanah orange 2l": {
+    "imageUrl": "https://cdn.mafrservices.com/sys-master-root/hb1/hfc/12456190246942/25612_Main.jpg",
+    "alt": "Savanah Orange Fruit Drink 2L",
+    "match": "matched",
+    "source": "Buy Savanah Orange Juice 2L Online"
+  },
+  "savanah strawbrry 5l": {
+    "imageUrl": "https://murukali.com/cdn/shop/files/Savanah-Strawberry-Fruit-Drink-5L-Murukali.com-204937398_813x875.jpg?v=1763400444",
+    "alt": "Savanah Strawberry Fruit Drink 5L",
+    "match": "matched",
+    "source": "\\nSavanah Strawberry Fruit Drink 5L - Murukali.com"
+  },
+  "nil water 5l": {
+    "imageUrl": "https://murukali.com/cdn/shop/files/WhatsApp_Image_2026-02-20_at_1.20.45_PM_1024x1024.jpg?v=1771587153",
+    "alt": "Nil 5‑Liter Drinking Water Pack",
+    "match": "matched",
+    "source": "\"Eau nulle 5 litres /4pcs | Meilleur prix en 2024 sur murukali.com — Murukali.com"
+  },
+  "nil water 1 5l": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2025/04/NILMineralWater15L_6807ac4084910.png",
+    "alt": "Nil Mineral Water 1.5L",
+    "match": "matched",
+    "source": "NIL Mineral Water 1.5L on Isokko"
+  },
+  "inyange water 1l": {
+    "imageUrl": "https://murukali.com/cdn/shop/files/Inyange-Mineral-Water-L-murukali-com-115.jpg",
+    "alt": "Inyange Natural Mineral Water 1L",
+    "match": "matched",
+    "source": "Inyange Mineral Water 1L on Murukali"
+  },
+  "inyange water 500ml": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2025/04/Untitleddesign38_68077e7a242e9_compressed_187kb_0.png",
+    "alt": "Inyange Water 500ml Bottle",
+    "match": "matched",
+    "source": "Inyange Water 12pcs 500ml on Isokko"
+  },
+  "sunveat cocobite biscuit 200g": {
+    "imageUrl": "https://cdn.mafrservices.com/pim-content/KEN/media/product/117607/1744114203/117607_main.jpg?im=Resize%3D480",
+    "alt": "Sunveat Original Coconut Cookies",
+    "match": "closest",
+    "source": "Buy Sunveat Real Coconut Cookies 175g Online"
+  },
+  "sunveat milkis bikis 200g": {
+    "imageUrl": "https://murukali.com/cdn/shop/files/WhatsAppImage2026-06-09at9.55.23AM_1_832x555.jpg?v=1781519875",
+    "alt": "Sunveat Milk Biscuit Family Pack",
+    "match": "closest",
+    "source": "SunVeat Milk Biscuits Family Pack"
+  },
+  "winnaz salted potato crisps 40g": {
+    "imageUrl": "https://static.wixstatic.com/media/fa71fb_b4bc428b552549e8be23e31aaea6a922~mv2.png/v1/fill/w_596%2Ch_448%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/fa71fb_b4bc428b552549e8be23e31aaea6a922~mv2.png",
+    "alt": "Winnaz Salted Potato Crisps Packet",
+    "match": "closest",
+    "source": "\"Clean-Crafted Snacks & Crisps | Pride Farms Rwanda & Kenya"
+  },
+  "winnaz vinegar salt 40g": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2024/12/102_676bd404d5603_compressed_441kb_10.png",
+    "alt": "Winnaz Salt & Vinegar Potato Crisps",
+    "match": "closest",
+    "source": "\"Winnaz Salt & Vinegar Potato Crisps, 30g on Isokko. Sold by Store X Rwanda. Available in\\n   Kigali, Rwanda. Groceries"
+  },
+  "winnaz paprika 40g": {
+    "imageUrl": "https://murukali.com/cdn/shop/files/Winnaz-paprika-potato-crisps-30g-murukali.com-55900724_510x765.png?v=1750098366",
+    "alt": "Winnaz Paprika Potato Crisps Packaging",
+    "match": "closest",
+    "source": "\"Winnaz paprika potato crisps 30g - Murukali.com"
+  },
+  "bakemate kreme e strawberry 140g": {
+    "imageUrl": "https://cdn.recheio.co.mz/assets/images/uploads/productimages/CookiesBakemate150GKremeEMIX20240208T142040-1.jpg",
+    "alt": "Bakemate Kreme-E Strawberry Sandwich Biscuits",
+    "match": "closest",
+    "source": "\"Comprar online Bolos  Madalenas 1X12 Frimo | Entrega Gratuita"
+  },
+  "britannia good day chocobite biscuit 200g": {
+    "imageUrl": "https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto%2Ch_600/NI_CATALOG/IMAGES/CIW/2025/6/27/82e6687a-a5bb-4768-877f-cd5e24cf670f_2321_1.png",
+    "alt": "Britannia Good Day Chocochip Cookies Pack",
+    "match": "closest",
+    "source": "\\nBuy Britannia Good Day Chocochip Cookies Online"
+  },
+  "britannia nutro strawberry 75g": {
+    "imageUrl": "https://dailyfreshgrocery.com/cdn/shop/products/britannia-nutro-strawberry-flavoured-150g-862708.jpg?v=1593234034",
+    "alt": "Britannia Nutro Strawberry Cream Wafers",
+    "match": "closest",
+    "source": "\"Britannia Nutro Strawberry Flavoured /"
+  },
+  "the sweet factory strawberry 50pieces": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2025/07/Screenshot_20250725-095013_6884904cedeb4.png",
+    "alt": "The Sweet Factory Strawberry Pillow Pack",
+    "match": "closest",
+    "source": "\"Sweet factory strawberry 50gr on Isokko. Sold by Kimironko Market. Available in\\n   Kigali, Rwanda. Home & Kitchen"
+  },
+  "the sweet factory passion 50pieces": {
+    "imageUrl": "https://murukali.com/cdn/shop/files/WhatsAppImage2025-12-19at18.56.45_1200x1800.jpg?v=1767716481",
+    "alt": "The Sweet Factory Passion Fruit Candy Pillow Pack",
+    "match": "closest",
+    "source": "\"The Sweet Factory Passion Fruit Candy – Pillow Pack Edition 200g — Murukali.com"
+  },
+  "fullbar chocolate 35g": {
+    "imageUrl": "https://static-01.daraz.pk/p/42286e19a2d1c5e388e5f36d6b7f71b5.jpg",
+    "alt": "Fullbar Chocolate Bar",
+    "match": "closest",
+    "source": "\"Fullbar Chocolate 66g / Pack of 3 / Made In Turkey / protein bar 6,9 gram / Cacao coated peanut with cream filled chocolate / Imported | Daraz.pk"
+  },
+  "mirinda orange drink 2l": {
+    "imageUrl": "https://moolocal.co.uk/cdn/shop/files/IMG-1507_1200x.jpg?v=1697477055",
+    "alt": "Mirinda Orange 2.25L Bottle",
+    "match": "closest",
+    "source": "\"Mirinda Orange 2.25 Litre Bottle"
+  },
+  "mountain dew drink 2l": {
+    "imageUrl": "https://cdn11.bigcommerce.com/s-3oxcprqsip/images/stencil/1280x1280/products/52175/62356/R1848652_40__94724.1666357731.jpg?c=1",
+    "alt": "Mountain Dew 2‑Litre Bottle",
+    "match": "matched",
+    "source": "\"Mountain Dew Soft Drink 2l - SPOIL.co.nz"
+  },
+  "fanta pineapple drink 1 5l": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2025/04/Fantapineapple1L_6807efeeefcdd.png",
+    "alt": "Fanta Pineapple Bottle",
+    "match": "closest",
+    "source": "Fanta Pineapple 1L on Isokko"
+  },
+  "vitalo eau gazeuse 50cl": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2025/10/Screenshot_20251019-152337_68f6c0da66673_compressed_211kb_10.png",
+    "alt": "Vitaló Sparkling Water Bottle",
+    "match": "closest",
+    "source": "Vitalo Sparkling Water EAU GAZEUSE on Isokko"
+  },
+  "britania sun sip strawberry 5l": {
+    "imageUrl": "https://murukali.com/cdn/shop/files/87a2d40b-53e9-4967-86e0-c86ab073039f_551x826.jpg?v=1774287531",
+    "alt": "Sun-Sip Concentrated Strawberry 3L",
+    "match": "closest",
+    "source": "\\nSun-Sip Concentrated 3L — Murukali.com"
+  },
+  "nil water 1l": {
+    "imageUrl": "https://isokko.com/m/media/upload/photos/2025/01/110_67879dda7dd0d_compressed_324kb_10.png",
+    "alt": "Nil Packaged Drinking Water",
+    "match": "closest",
+    "source": "NIL PACKAGED DRINKING WATER on Isokko"
+  },
+  "mirinda apple drink 2l": {
+    "imageUrl": "https://cdn.auchan.fr/media/MEDIASTEP123380799_2048x2048/B2CD/?format=rw&height=1200&quality=75&width=1200",
+    "alt": "Mirinda Apple-Flavored Soda (2L)",
+    "match": "matched",
+    "source": "MIRINDA Apple Flavored Soda 2L"
+  }
+}

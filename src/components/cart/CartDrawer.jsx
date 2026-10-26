@@ -120,7 +120,7 @@ export function CartDrawer({ open, onClose }) {
                         <img
                           src={item.imageUrl || PLACEHOLDER_IMAGE}
                           alt={item.name}
-                          className="h-full w-full object-cover"
+                          className="h-full w-full object-contain p-1"
                         />
                       </div>
                       <div className="flex flex-1 flex-col justify-between">
