@@ -26,7 +26,8 @@ export function Footer() {
     <footer className="mt-20 border-t border-slate-100 bg-slate-50/60 py-10 text-sm text-slate-600 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-950/60 dark:text-slate-300">
       <div className="section-shell grid gap-8 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1.1fr)_minmax(0,0.9fr)]">
         <div itemScope itemType="https://schema.org/LocalBusiness">
-          <h3 className="text-base font-bold text-slate-900 dark:text-white">
+          <h3 className="flex items-center gap-2.5 text-base font-bold text-slate-900 dark:text-white">
+            <img src="/logo-mark.svg" alt="" className="h-10 w-10 flex-shrink-0" />
             <span itemProp="name">Boutique La Différence</span>
           </h3>
           <p className="mt-2 text-sm leading-relaxed text-slate-500 dark:text-slate-400">

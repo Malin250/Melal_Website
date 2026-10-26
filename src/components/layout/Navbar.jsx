@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import { ArrowUpRight, Menu, MessageCircle, Moon, Search, ShoppingBasket, ShoppingCart, Sun, X } from 'lucide-react';
+import { ArrowUpRight, Menu, MessageCircle, Moon, Search, ShoppingCart, Sun, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useCart } from '../../context/CartContext.jsx';
 
@@ -88,18 +88,12 @@ export function Navbar({ darkMode, onToggleDarkMode, onOpenCart }) {
       <div className="border-b border-slate-200/80 bg-white/95 backdrop-blur-xl dark:border-slate-800 dark:bg-slate-950/95">
         <div className="section-shell">
           <div className="flex items-center justify-between gap-3 py-3">
-            <Link to="/" className="flex min-w-0 items-center gap-2.5">
-              <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-emerald-800 text-white shadow-sm">
-                <ShoppingBasket className="h-5 w-5" />
-              </span>
-              <span className="min-w-0 leading-tight">
-                <span className="block truncate text-sm font-extrabold tracking-[-0.035em] text-slate-900 dark:text-white sm:text-base">
-                  La Différence
-                </span>
-                <span className="block text-[9px] font-semibold uppercase tracking-[0.12em] text-slate-500 dark:text-slate-400">
-                  Fresh groceries · Kigali
-                </span>
-              </span>
+            <Link to="/" className="flex min-w-0 flex-shrink-0 items-center">
+              <img
+                src="/logo.svg"
+                alt="Boutique La Différence"
+                className="h-10 w-auto max-w-[170px] object-contain sm:h-12 sm:max-w-[205px]"
+              />
             </Link>
 
             <div className="hidden w-full max-w-md xl:block">{searchForm}</div>
